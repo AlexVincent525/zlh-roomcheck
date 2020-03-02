@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+body {
+	display: none;
+	background-image: url("/assets/img/bg.jpg");
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	color: #fff;
+	font-family: 'Microsoft YaHei UI', Arial, sans-srief;
+	font-weight: 300;
+}
+.container {
+	margin: 30px auto;
+}
+.inputBoxTitle {
+	display: block;
+	font-size: 26px;
+	font-weight: 600;
+	margin: 20px auto;
+	text-align: center;
+}
+.inputBoxTitle img {
+	margin-bottom: 20px;
+	height: 100px;
+	width: 100px;
+}
+.inputBoxTips {
+	font-size: 16px;
+	font-weight: 300;
+}
+.inputBox {
+	display: none;
+	margin: 30px auto;
+	width: 250px;
+}
+.enterInfo {
+	display: block;
+	margin: 30px auto;
+	width: 250px;
+}
+.profileInput {
+	background: rgba(0,0,0,0.2);
+	border: 1px solid black;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	margin: 5px 50px 20px;
+	width: 150px;
+}
+.file-input, .file-input-new {
+	text-align: center;
+}
+#filled {
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+}
+.printerNotice {
+	font-size: 18px;
+	text-align: center;
+}
+.printerNotice a {
+	color: #5bf;
+	text-decoration: underline;
+}
+.pay-donate {
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #ccc;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	width: 200px;
+}
+div.pay-donate {
+	margin: 50px auto;
+}
+.pay-donate span {
+	box-shadow: 0px 0px;
+	font-size: 16px;
+	text-align: center;
+	width: 180px;
+}
+.pay-donate img {
+	box-shadow: 0px 0px;
+	margin: 0px 0px;
+	height: 180px;
+	width: 180px;
+}
+.modal {
+	color: black;
+	top: 20%;
+}
+.modal-dialog {
+	margin: 20px auto;
+	width: 300px;
+	text-align: center;
+}

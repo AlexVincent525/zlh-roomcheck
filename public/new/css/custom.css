@@ -1,0 +1,37 @@
+@charset "utf-8";
+a, span, button, input, textarea, tr, th, td, ul, li, ol {
+    transition: 0.2s ease;
+}
+.animated {
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+.btn.btn-success.dateComfirm,
+.btn.btn-info.dateReset,
+.btn.btn-default.fileinput-upload.fileinput-upload-button,
+.btn.btn-default.fileinput-remove.fileinput-remove-button,
+.btn.btn-default.fileinput-cancel.fileinput-cancel-button,
+.btn.btn-primary.btn-file {
+    margin: 10px 0;
+    width: 100%;
+}
+.btn.btn-success.dateComfirm,
+.btn.btn-info.dateReset {
+    width: 50%;
+    float: left;
+}
+.form-group.date {
+    margin-bottom: 55px;
+}
+.form-group.file,
+.file-actions-cell {
+    display: none;
+}
+#changepwModal-body>span {
+    margin: 10px 0;
+    display: block;
+}
+.modal-footer {
+   text-align: center;
+}

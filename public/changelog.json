@@ -1,0 +1,49 @@
+{
+    "changelog":[
+        {
+            "date": "2017年4月23日",
+            "rows":[
+                {
+                    "type": "fix",
+                    "time": "21:31",
+                    "content":"上传控件反复添加的传值错误"
+                },
+                {
+                    "type": "fix",
+                    "time": "21:24",
+                    "content":"上传控件未重置的传值错误"
+                }
+            ]
+        },
+        {
+            "date": "2017年4月18日",
+            "rows":[
+                {
+                    "type": "enhance",
+                    "time": "22:48",
+                    "content":"HTTPS加密连接启用"
+                },
+                {
+                    "type": "fix",
+                    "time": "22:34",
+                    "content":"登录页用户名引导细节"
+                }
+            ]
+        },
+        {
+            "date": "2017年4月16日",
+            "rows":[
+                {
+                    "type": "fix",
+                    "time": "23:59",
+                    "content":"页面逻辑导致内容缺失"
+                },
+                {
+                    "type": "fix",
+                    "time": "23:44",
+                    "content":"表格读取中文导入失败"
+                }
+            ]
+        }
+    ]
+}

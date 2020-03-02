@@ -1,0 +1,41 @@
+@charset "utf-8";
+a, span, input, button {
+    transition: 0.3s ease;
+}
+#header .dropdown>.dropdown-menu {
+    left: -30px;
+}
+#form-tip {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+
+.btn.btn-warning.dateComfirm,
+.btn.btn-info.dateReset,
+.btn.btn-default.fileinput-upload.fileinput-upload-button,
+.btn.btn-default.fileinput-remove.fileinput-remove-button,
+.btn.btn-primary.btn-file {
+    margin: 10px 0;
+    width: 100%;
+}
+.btn.btn-warning.dateComfirm,
+.btn.btn-info.dateReset {
+    width: 50%;
+    float: left;
+}
+.form-group.date {
+    margin-bottom: 55px;
+}
+.form-group.file,
+.file-actions-cell {
+    display: none;
+}
+#changepwModal-body>span {
+    margin: 10px 0;
+    display: block;
+}
+.modal-footer {
+   text-align: center;
+}

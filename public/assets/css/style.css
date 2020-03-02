@@ -1,0 +1,402 @@
+@charset "utf-8";
+
+body {
+    font-family: "PingFang SC", "Microsoft Yahei UI", "Segoe UI", sans-serif, Arial;
+    margin: 0;
+}
+a, p, span, input, button, th, tr, td, ul, ol, li {
+    font-family: "PingFang SC", "Microsoft Yahei UI", "Segoe UI", sans-serif, Arial;
+    transition: 0.3s ease;
+}
+a, a:hover, a:active, a:visited, a:link, a:focus {
+    text-decoration: none;
+}
+table {
+    margin-bottom: 0 !important;
+}
+th {
+    text-align: center;
+}
+.form-control.datepicker[readonly] {
+    background: none;
+}
+
+i.littlered {
+    display: block;
+    position: absolute;
+    top: 0.5em;
+    left: -0.6em;
+    width: 0.4em;
+    height: 0.4em;
+    background: #f00;
+    border-radius: 50%;
+}
+.th-inner {
+    text-align: center;
+}
+.clearfix { 
+    zoom: 1;
+}
+.clearfix:after { 
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0; 
+    font-size: 0;
+    visibility: hidden;
+    clear: both;
+}
+.container {
+    background-image: url("../image/bg.png");
+    background-repeat: repeat-x;
+}
+.fw-l {font-weight: lighter;}
+.fw-n {font-weight: normal;}
+.fw-b {font-weight: bolder;}
+.op-0 {opacity: 0;}
+.op-1 {opacity: 1;}
+
+/** User Profile Section **/
+.userProfile {
+    padding: 20px;
+}
+.userAvatar {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+.circleBtn,
+.circleBtn:hover {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px 12px;
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+}
+.userAvatar.avatar {
+    display: inline-block;
+    margin: 0 50px;
+    padding: 4px;
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    border-radius: 130px;
+}
+.userAvatar img {
+    width: 122px;
+    border-radius: 122px;
+}
+.userInfo {
+    text-align: center;
+}
+.userName {
+    font-weight: bolder;
+}
+.userName,
+.userNotice {
+    position: relative;
+    color: #fff;
+    text-shadow: #333 1px 1px 1px;
+}
+
+/** Bill Section **/
+.billTotal {
+    margin-bottom: 50px;
+    height: 150px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #ccc;
+}
+.billCount {
+    height: 150px;
+    text-align: center;
+}
+.countLast, .countBalance, .countMonth {
+    display: inline-block;
+    width: calc(100%/3);
+    float: left;
+    padding: 30px 0;
+}
+.countLast.money, .countBalance.money, .countMonth.money, .countLast.title, .countBalance.title, .countMonth.title {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+}
+.countLast.money, .countBalance.money, .countMonth.money {
+    font-size: 26px;
+    font-weight: bolder;
+}
+.countLast.title, .countBalance.title, .countMonth.title {
+    color: #aaa;
+    font-size: 16px;
+}
+.countLast.money {
+    color: #444;
+}
+.countBalance.money {
+    color: #2DD264;
+}
+.countMonth.money {
+    color: #FF5353;
+}
+
+.billChart {
+    margin-bottom: 50px;
+}
+#echarts {
+    width: 100%;
+    height: 500px;
+}
+
+.billList {
+    position: relative;
+    background: white;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+.billListSwitch, .billListMore {
+    position: relative;
+    height: 40px;
+}
+/*.billListSwitch.switcher {
+    float: left;
+    width: calc(100%/3);
+}*/
+div.billListSwitch {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bolder;
+    background: #0495CC;
+    border: 0;
+    border-bottom: 3px solid #0495CC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    transition: 0.1s ease;
+}
+a.billListCategory {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    background: #fff;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #333;
+    transition: 0.1s ease;
+}
+a.billListCategory.switched {
+    background-color: #A4EAFF;
+    border-bottom: 3px solid #00ACD3;
+    font-weight: bolder;
+}
+.listSearch {
+    padding: 20px 0;
+}
+.listSearch span {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.listSearch input {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+button#tableFetch {
+    margin: 10px auto;
+    width: 80px;
+    background: #0495CC;
+    color: #fff;
+}
+button#tableFetch:hover,
+button#tableFetch:focus {
+    background-color: #0479CC;
+    border-color: #0479CC;
+}
+.dropdown-menu {
+    min-width: auto !important;
+    text-align: center;
+}
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
+    background: #0431CC;
+    color: #fff;
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background: #0431CC;
+    color: #fff;
+    border-color: #0431CC;
+}
+.pagination>li>a, .pagination>li>span {
+    color: #0431CC;
+}
+.pagination>li>a:hover,
+.pagination>li>a:focus,
+.pagination>li>span:hover,
+.pagination>li>span:focus {
+    color: #444;
+}
+.billListTable {
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.ltClassTime, .ltClassType, .ltClassPaid, .ltClassBalance {
+    width: 18.75%;
+}
+.billListMore {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div.billListMore {
+    border-top: 3px solid #0431CC;
+    box-shadow: 0px 5px 5px #ccc;
+    color: #444;
+    transition: 0.2s ease;
+}
+a.billListMore.checkMore {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #444;
+    transition: 0.2s ease;
+}
+a.billListMore.checkMore:hover {
+    background: #0431CC;
+    color: #fff;
+}
+@media (max-width: 414px) {
+    .circleBtn {
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        padding: 0;
+        padding-top: 3px;
+    }
+    .userAvatar.avatar {
+        margin: 0 25px;
+        width: 80px;
+        height: 80px;
+    }
+    .userAvatar img {
+        width: 72px;
+        border-radius: 72px;
+    }
+    .billTotal {
+        height: 100px;
+    }
+    .billCount {
+        height: 100px;
+    }
+    .countLast, .countBalance, .countMonth {
+        padding: 10px 0;
+    }
+}
+@media (max-width: 563px) {
+    .ltClassType {
+        display: none;
+    }
+    .ltClassTime, .ltClassPaid, .ltClassBalance {
+        width: calc(100%/3);
+    }
+}
+@media (max-width: 992px) {
+    .ltClassLocation {
+        display: none;
+    }
+    .ltClassTime, .ltClassType, .ltClassPaid, .ltClassBalance {
+        width: 25%;
+    }
+}
+
+/* Spinner */
+.spinner {
+    margin: 100px auto;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px;
+}
+div#loading {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999;
+}
+.spinner > div {
+    background-color: #fff;
+    height: 60px;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 0.7s infinite ease-in-out;
+    animation: stretchdelay 0.7s infinite ease-in-out;
+}
+.spinner > span {
+    display: block;
+    font-size: 14px;
+}
+.spinner .rect1 {
+    background: #f73B3B;
+}
+.spinner .rect2 {
+    background: #fdec1f;
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+}
+.spinner .rect3 {
+    background: #1f8cfd;
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+.spinner .rect4 {
+    background: #4Bfd1f;
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+.spinner .rect5 {
+    background: #bc1ffd;
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+}
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
+    20% { -webkit-transform: scaleY(1.0) }
+}
+@keyframes stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    } 20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
